@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Handmade Woven Bilum Bag",
+    "category": "Fashion",
+    "seller": "Highlands Weavers Co.",
+    "price": 85.00,
+    "inventory": 12,
+    "image": "images/market.jpg",
+    "short": "Traditional bilum, hand-woven by Highland artisans.",
+    "description": "A beautifully hand-woven bilum bag crafted with traditional Highland techniques. Each piece is unique and made with natural fibres, combining heritage with everyday practicality.",
+    "badge": "Popular"
+  },
+  {
+    "id": 2,
+    "name": "Highland Coffee Beans (500g)",
+    "category": "Food & Drink",
+    "seller": "Goroka Coffee Roasters",
+    "price": 32.50,
+    "inventory": 40,
+    "image": "https://placehold.co/600x600/edb400/191919?text=Highland+Coffee",
+    "short": "Fresh-roasted single origin from the Highlands.",
+    "description": "Rich, aromatic single-origin coffee grown in the Papua New Guinea highlands and roasted in small batches for peak freshness. 500g whole beans.",
+    "badge": "New"
+  },
+  {
+    "id": 3,
+    "name": "Hand-carved Wooden Bowl",
+    "category": "Home & Living",
+    "seller": "Sepik Woodworks",
+    "price": 45.00,
+    "inventory": 8,
+    "image": "https://placehold.co/600x600/3fa33d/ffffff?text=Wooden+Bowl",
+    "short": "Solid wood bowl with traditional Sepik carvings.",
+    "description": "A deep, hand-carved bowl made from locally-sourced timber. The exterior features traditional Sepik-inspired motifs. Perfect as a centrepiece or fruit bowl.",
+    "badge": "Limited"
+  },
+  {
+    "id": 4,
+    "name": "Traditional Shell Necklace",
+    "category": "Fashion",
+    "seller": "Coastal Craft Collective",
+    "price": 65.00,
+    "inventory": 15,
+    "image": "images/market.jpg",
+    "short": "Statement necklace made from polished shells.",
+    "description": "A handcrafted necklace made from polished cowrie and bailer shells — a symbol of wealth and status in many PNG coastal cultures. Each piece is one of a kind.",
+    "badge": "Popular"
+  },
+  {
+    "id": 5,
+    "name": "Organic Gift Basket",
+    "category": "Food & Drink",
+    "seller": "Fresh Farms PNG",
+    "price": 55.00,
+    "inventory": 20,
+    "image": "https://placehold.co/600x600/edb400/191919?text=Gift+Basket",
+    "short": "Seasonal fruit, coffee and honey in a woven basket.",
+    "description": "A thoughtfully curated basket of seasonal produce, PNG-roasted coffee, and local honey, wrapped in a reusable woven basket. Perfect gift.",
+    "badge": "Popular"
+  },
+  {
+    "id": 6,
+    "name": "Sepik River Clay Pot",
+    "category": "Home & Living",
+    "seller": "Sepik Woodworks",
+    "price": 120.00,
+    "inventory": 5,
+    "image": "images/market.jpg",
+    "short": "Hand-thrown ceremonial pot from the Sepik.",
+    "description": "A hand-thrown clay pot modelled on traditional ceremonial vessels from the Sepik River region. Fired using age-old methods. Each pot is signed by the artisan.",
+    "badge": "Limited"
+  },
+  {
+    "id": 7,
+    "name": "Grass-woven Storage Basket",
+    "category": "Home & Living",
+    "seller": "Highlands Weavers Co.",
+    "price": 38.00,
+    "inventory": 25,
+    "image": "https://placehold.co/600x600/3fa33d/ffffff?text=Grass+Basket",
+    "short": "Durable, woven storage basket for everyday use.",
+    "description": "A sturdy, hand-woven storage basket made from locally harvested grass. Great for laundry, toys, or decorative storage. Natural variations make each one unique.",
+    "badge": "New"
+  },
+  {
+    "id": 8,
+    "name": "Local Tour Guide Service",
+    "category": "Services",
+    "seller": "Community Guides PNG",
+    "price": 150.00,
+    "inventory": 10,
+    "image": "https://placehold.co/600x600/edb400/191919?text=Tour+Guide",
+    "short": "Half-day guided tour with a local expert.",
+    "description": "A half-day walking tour led by a knowledgeable local guide. Discover hidden markets, cultural sites, and the stories behind the neighbourhood. Price is per person.",
+    "badge": "Popular"
+  }
+]
