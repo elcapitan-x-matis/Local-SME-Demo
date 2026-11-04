@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In | Local SME PNG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/quicksand@5.0.0/index.min.css">
+    <link rel="stylesheet" href="../../css/custom.css" />
+    <link rel="shortcut icon" type="icon/ico" href="../../icon/favicon.ico" />
+</head>
+<body data-root="../../">
+
+    <nav class="navbar sticky-top navbar-dark site-nav">
+      <div class="container-fluid px-3 px-md-5">
+        <a class="navbar-brand" href="../../index.html"><img src="../../icon/favicon.ico" width="40" height="40" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="offcanvas offcanvas-end site-nav-offcanvas" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <a href="../../index.html" class="text-decoration-none"><h5 class="offcanvas-title"><img src="../../icon/favicon.ico" width="50" height="50" class="me-2" alt="Logo">LOCAL SME <span style="color:#edb400;">|</span> PNG</h5></a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end pe-3">
+              <li class="nav-item"><a class="nav-link" href="../../cart/index.html"><i class="bi bi-cart"></i>&nbsp;My Cart <span class="badge rounded-pill" data-cart-badge style="background-color:#edb400;color:#191919;margin-left:6px;display:none;">0</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="../../wishlist/index.html"><i class="bi bi-heart-fill"></i>&nbsp;Wishlist <span class="badge rounded-pill" data-wish-badge style="background-color:#edb400;color:#191919;margin-left:6px;display:none;">0</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="../register/index.html"><i class="bi bi-person-plus"></i>&nbsp;New Account</a></li>
+              <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-box-arrow-in-right"></i>&nbsp;Sign In</a></li>
+              <hr class="my-3" style="border-color:rgba(255,255,255,0.15);">
+              <li class="nav-item"><a class="nav-link" href="../../index.html"><i class="bi bi-house"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../shop/index.html"><i class="bi bi-shop"></i>&nbsp;Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../about/index.html"><i class="bi bi-info-circle"></i>&nbsp;About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../contact/index.html"><i class="bi bi-telephone"></i>&nbsp;Get In Touch</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid px-3 px-md-5">
+        <div class="row justify-content-center align-items-center auth-wrapper">
+            <div class="col-md-8 col-lg-5">
+                <div class="card auth-card">
+                    <div class="card-body text-center">
+
+                        <div class="auth-icon-badge">
+                            <i class="bi bi-person-lock"></i>
+                        </div>
+
+                        <h1 class="display-6 fw-bold mb-2 auth-title">Welcome Back</h1>
+                        <p class="text-muted mb-4">Sign in to continue to your Local SME account</p>
+
+                        <form id="loginForm">
+                            <div class="form-group mb-3">
+                                <div class="input-group auth-input-group">
+                                    <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                    <input type="text" id="useremail" class="form-control" placeholder="username or email…" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <div class="input-group auth-input-group">
+                                    <span class="input-group-text"><i class="bi bi-shield-lock-fill"></i></span>
+                                    <input type="password" id="password" class="form-control" placeholder="password…" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <button class="btn btn-auth-submit btn-lg btn-block w-100 py-3" type="submit">
+                                    Sign In&nbsp;<i class="bi bi-arrow-right-circle ms-1"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="auth-divider">
+                            <hr>
+                            <span>NEW HERE?</span>
+                            <hr>
+                        </div>
+
+                        <a href="../register/index.html" class="btn btn-auth-outline btn-block w-100 py-3">
+                            <i class="bi bi-person-plus-fill me-2"></i>Create an Account
+                        </a>
+
+                        <div class="mt-4">
+                            <small class="text-muted">
+                                <i class="bi bi-shield-check me-1" style="color:#3fa33d;"></i>
+                                Your information is safe and secure with us.
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4 mb-md-0"><h5 class="footer-heading">Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="../../about/index.html"><i class="bi bi-info-circle"></i>About Us</a></li>
+              <li><a href="../../contact/index.html"><i class="bi bi-telephone"></i>Contact Us</a></li>
+              <li><a href="mailto:onlinecatalgoue@email.com"><i class="bi bi-envelope"></i>onlinecatalgoue@email.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0 d-flex flex-column justify-content-center">
+            <img src="../../icon/favicon.ico" width="40" height="40" class="mb-2 mx-auto" alt="Logo">
+            <p class="footer-brand mb-1">LOCAL SME <span style="color:#edb400;">|</span> PNG</p>
+            <p class="footer-copy mb-0">All Rights Reserved &copy; 2026</p>
+          </div>
+          <div class="col-md-4 text-md-end"><h5 class="footer-heading">Follow Us</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#"><i class="bi bi-facebook"></i>Facebook</a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i>Instagram</a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i>Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="scroll-btn" class="btn btn-circle scroll-btn"><i class="bi bi-arrow-up-short"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../../js/top-scroll.js"></script>
+    <script src="../../js/demo-cart.js"></script>
+    <script src="../../js/custom.js"></script>
+
+    <div class="modal fade" id="systemAlertModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content order-modal-content" style="border:2px solid #edb400;">
+        <div class="modal-header order-modal-header"><h5 class="modal-title" id="alertModalTitle"><i class="bi bi-info-circle me-2"></i>System Notice</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body text-center p-4"><div id="alertModalIcon" class="mb-3"><i class="bi bi-info-circle-fill" style="font-size:4rem;color:#3fa33d;"></i></div><h4 id="alertMsg" class="mb-0" style="color:#191919;font-weight:600;"></h4></div>
+        <div class="modal-footer justify-content-center border-0 pb-4"><button type="button" class="btn btn-pill-green px-5" data-bs-dismiss="modal">OK</button></div>
+      </div></div>
+    </div>
+
+</body>
+</html>

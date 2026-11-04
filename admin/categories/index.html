@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Categories | Admin — Local SME PNG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/quicksand@5.0.0/index.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="../../css/custom.css" />
+    <link rel="shortcut icon" type="icon/ico" href="../../icon/favicon.ico" />
+</head>
+<body data-root="../../" data-admin="true">
+
+    <div class="container-fluid px-3 px-md-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Admin Panel</li>
+                    <li class="breadcrumb-item active">Categories</li>
+                </ol>
+            </div>
+
+            <section class="page-hero mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-8 text-center text-md-start">
+                        <span class="hero-eyebrow-gold"><i class="bi bi-bookmark-fill me-2"></i>Manage Inventory</span>
+                        <h1 class="display-5 fw-bold">Product <span class="text-white">Categories</span></h1>
+                        <p class="lead hero-lead"><i class="bi bi-tags-fill me-2" style="color:#3fa33d;"></i>Organise products into clear, browsable categories.</p>
+                    </div>
+                    <div class="col-md-4 text-center mt-4 mt-md-0"><div class="hero-blob blob-200"><i class="bi bi-bookmarks-fill icon-5"></i></div></div>
+                </div>
+            </section>
+
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                <a href="../index.html" role="button" class="btn btn-pill-dark btn-sm"><i class="bi bi-arrow-left"></i>&nbsp;Back to Dashboard</a>
+                <div class="d-flex gap-2 flex-wrap">
+                    <span class="pill-count"><i class="bi bi-bookmark me-1"></i>4 Categories</span>
+                    <a href="add/index.html" class="btn btn-pill-green btn-sm"><i class="bi bi-plus-circle me-1"></i>New Category</a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="surface-card card-pad">
+                        <div class="table-responsive">
+                            <table id="dataTable" class="table table-styled table-hover w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Code</th>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th class="text-end">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="pill-category-gold" style="font-family:'Courier New',monospace;">FOOD</span></td>
+                                        <td><strong>Food & Drink</strong></td>
+                                        <td><small class="text-muted d-block" style="max-width:400px;">Local coffee, honey, seasonal produce, and artisan pantry goods.</small></td>
+                                        <td class="text-end">
+                                            <div class="table-actions justify-content-end">
+                                                <a href="view/index.html?code=FOOD" class="table-action-btn table-action-view" title="View"><i class="bi bi-eye"></i></a>
+                                                <a href="update/index.html?code=FOOD" class="table-action-btn table-action-edit" title="Edit"><i class="bi bi-pencil"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="pill-category-gold" style="font-family:'Courier New',monospace;">FASH</span></td>
+                                        <td><strong>Fashion</strong></td>
+                                        <td><small class="text-muted d-block" style="max-width:400px;">Hand-woven bilums, shell jewellery, and traditional apparel.</small></td>
+                                        <td class="text-end">
+                                            <div class="table-actions justify-content-end">
+                                                <a href="view/index.html?code=FASH" class="table-action-btn table-action-view" title="View"><i class="bi bi-eye"></i></a>
+                                                <a href="update/index.html?code=FASH" class="table-action-btn table-action-edit" title="Edit"><i class="bi bi-pencil"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="pill-category-gold" style="font-family:'Courier New',monospace;">HOME</span></td>
+                                        <td><strong>Home & Living</strong></td>
+                                        <td><small class="text-muted d-block" style="max-width:400px;">Hand-carved bowls, clay pots, woven baskets, and home textiles.</small></td>
+                                        <td class="text-end">
+                                            <div class="table-actions justify-content-end">
+                                                <a href="view/index.html?code=HOME" class="table-action-btn table-action-view" title="View"><i class="bi bi-eye"></i></a>
+                                                <a href="update/index.html?code=HOME" class="table-action-btn table-action-edit" title="Edit"><i class="bi bi-pencil"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="pill-category-gold" style="font-family:'Courier New',monospace;">SERV</span></td>
+                                        <td><strong>Services</strong></td>
+                                        <td><small class="text-muted d-block" style="max-width:400px;">Local guides, workshops, and community experiences.</small></td>
+                                        <td class="text-end">
+                                            <div class="table-actions justify-content-end">
+                                                <a href="view/index.html?code=SERV" class="table-action-btn table-action-view" title="View"><i class="bi bi-eye"></i></a>
+                                                <a href="update/index.html?code=SERV" class="table-action-btn table-action-edit" title="Edit"><i class="bi bi-pencil"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../js/top-scroll.js"></script>
+    <script src="../../js/demo-cart.js"></script>
+    <script src="../../js/custom.js"></script>
+    <script src="../../js/admin-nav.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('#dataTable').DataTable({
+            "order": [[0, "asc"]],
+            "pageLength": 10,
+            "columnDefs": [{ "orderable": false, "targets": 3 }],
+            "language": {
+                "search": "<i class='bi bi-search'></i> Search categories:",
+                "lengthMenu": "Show _MENU_ entries"
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>

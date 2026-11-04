@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customers | Admin — Local SME PNG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/quicksand@5.0.0/index.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="../../css/custom.css" />
+    <link rel="shortcut icon" type="icon/ico" href="../../icon/favicon.ico" />
+</head>
+<body data-root="../../" data-admin="true">
+
+    <div class="container-fluid px-3 px-md-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Admin Panel</li>
+                    <li class="breadcrumb-item active">Customers</li>
+                </ol>
+            </div>
+
+            <section class="page-hero mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-8 text-center text-md-start">
+                        <span class="hero-eyebrow-gold"><i class="bi bi-people-fill me-2"></i>Manage Store</span>
+                        <h1 class="display-5 fw-bold">Registered <span class="text-white">Customers</span></h1>
+                        <p class="lead hero-lead"><i class="bi bi-person-lines-fill me-2" style="color:#3fa33d;"></i>View and manage all registered users on the platform.</p>
+                    </div>
+                    <div class="col-md-4 text-center mt-4 mt-md-0"><div class="hero-blob blob-200"><i class="bi bi-people icon-5"></i></div></div>
+                </div>
+            </section>
+
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                <a href="../index.html" role="button" class="btn btn-pill-dark btn-sm"><i class="bi bi-arrow-left"></i>&nbsp;Back to Dashboard</a>
+                <span class="pill-count"><i class="bi bi-person-check me-1"></i>4 Total Customers</span>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="surface-card card-pad">
+                        <div class="table-responsive">
+                            <table id="dataTable" class="table table-styled table-hover w-100">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>City / Town</th>
+                                        <th>Status</th>
+                                        <th>Registered</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="text-muted">#</span>1</td>
+                                        <td><strong>Jane Doe</strong></td>
+                                        <td>janedoe</td>
+                                        <td>jane.doe@email.com</td>
+                                        <td>+675 7123 4567</td>
+                                        <td>Port Moresby</td>
+                                        <td><span class="pill-status-dark" style="background-color:#3fa33d;color:#fff;">Active</span></td>
+                                        <td><small class="text-muted"><i class="bi bi-calendar-event me-1"></i>Jan 10, 2026</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-muted">#</span>2</td>
+                                        <td><strong>John Smith</strong></td>
+                                        <td>jsmith</td>
+                                        <td>john.smith@email.com</td>
+                                        <td>+675 7234 5678</td>
+                                        <td>Lae</td>
+                                        <td><span class="pill-status-dark" style="background-color:#3fa33d;color:#fff;">Active</span></td>
+                                        <td><small class="text-muted"><i class="bi bi-calendar-event me-1"></i>Feb 02, 2026</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-muted">#</span>3</td>
+                                        <td><strong>Mary Kila</strong></td>
+                                        <td>mkila</td>
+                                        <td>mary.kila@email.com</td>
+                                        <td>+675 7345 6789</td>
+                                        <td>Madang</td>
+                                        <td><span class="pill-status-dark">Inactive</span></td>
+                                        <td><small class="text-muted"><i class="bi bi-calendar-event me-1"></i>Feb 18, 2026</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-muted">#</span>4</td>
+                                        <td><strong>Peter Wama</strong></td>
+                                        <td>pwama</td>
+                                        <td>peter.wama@email.com</td>
+                                        <td>+675 7456 7890</td>
+                                        <td>Mount Hagen</td>
+                                        <td><span class="pill-status-dark" style="background-color:#3fa33d;color:#fff;">Active</span></td>
+                                        <td><small class="text-muted"><i class="bi bi-calendar-event me-1"></i>Mar 05, 2026</small></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../js/top-scroll.js"></script>
+    <script src="../../js/demo-cart.js"></script>
+    <script src="../../js/custom.js"></script>
+    <script src="../../js/admin-nav.js"></script>
+    <script>
+    $(document).ready(function () {
+        if ($('#dataTable').length) {
+            $('#dataTable').DataTable({
+                "order": [[7, "desc"]],
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                "language": {
+                    "search": "<i class='bi bi-search'></i> Search customers:",
+                    "lengthMenu": "Show _MENU_ entries"
+                }
+            });
+        }
+    });
+    </script>
+
+</body>
+</html>
