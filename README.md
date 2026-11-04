@@ -114,9 +114,9 @@ Full component reference is available in the original project's README.
 
 | Customer Storefront | Admin Dashboard |
 | :--- | :--- |
-| [Customs Home Page](screenshots/customer-home.png) | [Admin Dashboard](screenshots/admin-dashboard.png) |
+| [Customs Home Page](/screenshots/customer-home.png) | [Admin Dashboard](/screenshots/admin-dashboard.png) |
 | **Shop Catalogue** | **Product Management** |
-| [Shop Landing Page](screenshots/customer-shop.png) | [Admin Products](screenshots/admin-products.png) |
+| [Shop Landing Page](/screenshots/customer-shop.png) | [Admin Products](/screenshots/admin-products.png) |
 
 
 ## ⚠️ Disclaimer
