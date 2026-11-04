@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart | Local SME PNG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/quicksand@5.0.0/index.min.css">
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="shortcut icon" type="icon/ico" href="../icon/favicon.ico" />
+</head>
+<body data-root="../">
+
+    <nav class="navbar sticky-top navbar-dark site-nav">
+      <div class="container-fluid px-3 px-md-5">
+        <a class="navbar-brand" href="../index.html"><img src="../icon/favicon.ico" width="40" height="40" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="offcanvas offcanvas-end site-nav-offcanvas" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <a href="../index.html" class="text-decoration-none"><h5 class="offcanvas-title"><img src="../icon/favicon.ico" width="50" height="50" class="me-2" alt="Logo">LOCAL SME <span style="color:#edb400;">|</span> PNG</h5></a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end pe-3">
+              <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-cart"></i>&nbsp;My Cart <span class="badge rounded-pill" data-cart-badge style="background-color:#edb400;color:#191919;margin-left:6px;display:none;">0</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="../wishlist/index.html"><i class="bi bi-heart-fill"></i>&nbsp;Wishlist <span class="badge rounded-pill" data-wish-badge style="background-color:#edb400;color:#191919;margin-left:6px;display:none;">0</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="../profile/index.html"><i class="bi bi-person-circle"></i>&nbsp;Jane Doe</a></li>
+              <hr class="my-3" style="border-color:rgba(255,255,255,0.15);">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="../shop/index.html"><i class="bi bi-shop"></i>&nbsp;Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="../about/index.html"><i class="bi bi-info-circle"></i>&nbsp;About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="../contact/index.html"><i class="bi bi-telephone"></i>&nbsp;Get In Touch</a></li>
+            </ul>
+            <hr class="my-3" style="border-color:rgba(255,255,255,0.15);">
+            <a class="btn btn-pill-gold btn-block py-2" href="../authentication/login/index.html"><i class="bi bi-box-arrow-left me-1"></i>Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid px-3 px-md-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Local SME</li>
+                    <li class="breadcrumb-item active">Cart</li>
+                </ol>
+            </div>
+
+            <section class="page-hero mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-7 text-center text-md-start">
+                        <span class="hero-eyebrow-gold"><i class="bi bi-bag-check-fill me-2"></i>Your Selection</span>
+                        <h1 class="display-4 fw-bold">Shopping <span class="text-white">Cart</span></h1>
+                        <p class="lead hero-lead"><i class="bi bi-cart3 me-2" style="color:#3fa33d;"></i>Review your items and proceed when you're ready.</p>
+                    </div>
+                    <div class="col-md-5 text-center mt-4 mt-md-0"><div class="hero-blob blob-200"><i class="bi bi-cart-check-fill icon-5"></i></div></div>
+                </div>
+            </section>
+
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                <a href="../shop/index.html" role="button" class="btn btn-pill-dark btn-sm"><i class="bi bi-arrow-left"></i>&nbsp;Back to Shop</a>
+                <span class="pill-count d-none" id="cartItemCount"><i class="bi bi-box-seam me-1"></i><span id="cartItemCountText">0 items in cart</span></span>
+            </div>
+
+            <!-- Populated cart (hidden until items exist) -->
+            <div class="row justify-content-center g-4 align-items-start" id="cartFull" style="display:none;">
+                <div class="col-md-8" id="cartItemsContainer"></div>
+                <div class="col-md-4">
+                    <div class="dark-panel sticky-top-offset">
+                        <h4 class="mb-4"><i class="bi bi-receipt me-2"></i>Order Summary</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="summary-row"><span class="label"><i class="bi bi-boxes me-2" style="color:#3fa33d;"></i>Total Items</span><span class="value" id="summary-total-items">0</span></li>
+                            <li class="summary-row"><span class="label"><i class="bi bi-truck me-2" style="color:#edb400;"></i>Delivery</span><span class="value" style="color:#3fa33d;">Arranged with seller</span></li>
+                            <li class="summary-row grand mt-3"><span><i class="bi bi-cash-stack me-2" style="color:#3fa33d;"></i>Grand Total</span><span class="value" id="summary-grand-total">PGK 0.00</span></li>
+                        </ul>
+                        <hr>
+                        <a href="../checkout/index.html" role="button" class="btn btn-pill-green btn-block py-3 mb-3">Proceed to Checkout&nbsp;<i class="bi bi-cart-check ms-1"></i></a>
+                        <a href="../shop/index.html" class="btn btn-pill-gold-outline btn-block py-2"><i class="bi bi-plus-circle me-1"></i>Continue Shopping</a>
+                        <div class="text-center mt-4">
+                            <i class="bi bi-shield-check" style="font-size:2rem;color:#3fa33d;"></i>
+                            <p class="mt-2 mb-0" style="color:#999;font-size:0.85rem;">Safe & secure checkout. Supporting local businesses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty state -->
+            <div class="row justify-content-center mb-5" id="cartEmpty">
+                <div class="col-md-8">
+                    <div class="empty-state">
+                        <div class="empty-state-icon"><i class="bi bi-cart-x"></i></div>
+                        <h2 class="mb-3" style="color:#191919;font-weight:600;">Your cart is empty</h2>
+                        <p class="lead mb-4" style="color:#666;">Looks like you haven't added anything yet. Explore our catalogue and find something you love!</p>
+                        <a href="../shop/index.html" class="btn btn-pill-green btn-lg px-5 py-3"><i class="bi bi-shop me-2"></i>Start Shopping</a>
+                    </div>
+                </div>
+            </div>
+
+            <span id="actionMsg"></span>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4 mb-md-0"><h5 class="footer-heading">Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="../about/index.html"><i class="bi bi-info-circle"></i>About Us</a></li>
+              <li><a href="../contact/index.html"><i class="bi bi-telephone"></i>Contact Us</a></li>
+              <li><a href="mailto:onlinecatalgoue@email.com"><i class="bi bi-envelope"></i>onlinecatalgoue@email.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0 d-flex flex-column justify-content-center">
+            <img src="../icon/favicon.ico" width="40" height="40" class="mb-2 mx-auto" alt="Logo">
+            <p class="footer-brand mb-1">LOCAL SME <span style="color:#edb400;">|</span> PNG</p>
+            <p class="footer-copy mb-0">All Rights Reserved &copy; 2026</p>
+          </div>
+          <div class="col-md-4 text-md-end"><h5 class="footer-heading">Follow Us</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#"><i class="bi bi-facebook"></i>Facebook</a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i>Instagram</a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i>Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="scroll-btn" class="btn btn-circle scroll-btn"><i class="bi bi-arrow-up-short"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/top-scroll.js"></script>
+    <script src="../js/demo-cart.js"></script>
+    <script src="../js/custom.js"></script>
+
+    <div class="modal fade" id="systemAlertModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content order-modal-content" style="border:2px solid #edb400;">
+        <div class="modal-header order-modal-header"><h5 class="modal-title" id="alertModalTitle"><i class="bi bi-info-circle me-2"></i>System Notice</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body text-center p-4"><div id="alertModalIcon" class="mb-3"><i class="bi bi-info-circle-fill" style="font-size:4rem;color:#3fa33d;"></i></div><h4 id="alertMsg" class="mb-0" style="color:#191919;font-weight:600;"></h4></div>
+        <div class="modal-footer justify-content-center border-0 pb-4"><button type="button" class="btn btn-pill-green px-5" data-bs-dismiss="modal">OK</button></div>
+      </div></div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('../data/products.json').then(r => r.json()).then(all => {
+            const cartMap = DemoCart.all();
+            const ids = Object.keys(cartMap).map(Number);
+            const fullBox = document.getElementById('cartFull');
+            const emptyBox = document.getElementById('cartEmpty');
+            const container = document.getElementById('cartItemsContainer');
+            const countBadge = document.getElementById('cartItemCount');
+            const countText = document.getElementById('cartItemCountText');
+
+            if (!ids.length) {
+                emptyBox.style.display = ''; fullBox.style.display = 'none';
+                countBadge.classList.add('d-none');
+                return;
+            }
+
+            emptyBox.style.display = 'none';
+            fullBox.style.display = '';
+            countBadge.classList.remove('d-none');
+            countText.textContent = ids.length + ' item' + (ids.length !== 1 ? 's' : '') + ' in cart';
+
+            let grand = 0, totalQty = 0;
+            container.innerHTML = ids.map(id => {
+                const p = all.find(x => x.id === id); if (!p) return '';
+                const qty = cartMap[id];
+                const sub = p.price * qty;
+                grand += sub; totalQty += qty;
+                return `
+                <div class="cart-item-card mb-4" data-id="${p.id}">
+                    <div class="card-body p-3 p-md-4">
+                        <div class="row align-items-center g-3">
+                            <div class="col-4 col-md-2 text-center">
+                                <div class="img-frame">
+                                    <img src="../${p.image}" width="80" height="80" alt="${p.name}" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-4">
+                                <a href="../product/index.html?id=${p.id}" class="text-decoration-none"><h5 class="mb-1" style="color:#191919;font-weight:600;">${p.name}</h5></a>
+                                <div class="mb-2"><span class="pill-category"><i class="bi bi-tag-fill me-1"></i>${p.category}</span></div>
+                                <p class="mb-0" style="color:#666;font-size:0.9rem;">
+                                    <i class="bi bi-currency-exchange me-1" style="color:#edb400;"></i>PGK ${p.price.toFixed(2)} each
+                                </p>
+                            </div>
+                            <div class="col-6 col-md-3 text-center text-md-start mt-3 mt-md-0">
+                                <span class="item-label d-block text-center mb-1">Qty</span>
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                                    <button type="button" class="btn btn-circle-dark-qty qty-btn" data-action="decrease" data-product="${p.id}"><i class="bi bi-dash"></i></button>
+                                    <input type="number" min="1" max="${p.inventory}" id="qty_${p.id}" class="form-control form-control-sm quantity-input text-center" value="${qty}" data-product="${p.id}" data-price="${p.price}" style="max-width:60px;">
+                                    <button type="button" class="btn btn-circle-dark-qty qty-btn" data-action="increase" data-product="${p.id}"><i class="bi bi-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 mt-3 mt-md-0">
+                                <div class="cart-action-wrap">
+                                    <span class="item-label">Subtotal</span>
+                                    <h5 class="mb-2 item-subtotal" id="sub_${p.id}" style="color:#3fa33d;font-weight:700;">PGK ${sub.toFixed(2)}</h5>
+                                    <button type="button" class="btn btn-circle-action btn-circle-danger remove-cart-btn" data-product="${p.id}" title="Remove from cart"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+
+            document.getElementById('summary-total-items').textContent = totalQty;
+            document.getElementById('summary-grand-total').textContent = 'PGK ' + grand.toFixed(2);
+
+            // qty +/- handlers
+            container.querySelectorAll('.qty-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const id = this.dataset.product;
+                    const input = document.getElementById('qty_' + id);
+                    const price = parseFloat(input.dataset.price);
+                    const max = parseInt(input.max) || 9999;
+                    let v = parseInt(input.value) || 1;
+                    if (this.dataset.action === 'increase') v = Math.min(v + 1, max);
+                    else v = Math.max(v - 1, 1);
+                    input.value = v;
+                    recalc();
+                });
+            });
+            container.querySelectorAll('.quantity-input').forEach(inp => {
+                inp.addEventListener('change', function () {
+                    const max = parseInt(this.max) || 9999;
+                    let v = parseInt(this.value) || 1;
+                    if (v < 1) v = 1; if (v > max) v = max;
+                    this.value = v;
+                    recalc();
+                });
+            });
+            container.querySelectorAll('.remove-cart-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    DemoCart.remove(this.dataset.product);
+                    window.showSystemModal('Item removed from cart.', true, true);
+                });
+            });
+
+            function recalc() {
+                let g = 0, t = 0;
+                container.querySelectorAll('.quantity-input').forEach(inp => {
+                    const id = inp.dataset.product;
+                    const price = parseFloat(inp.dataset.price);
+                    const q = parseInt(inp.value) || 1;
+                    document.getElementById('sub_' + id).textContent = 'PGK ' + (price * q).toFixed(2);
+                    DemoCart.setQty(id, q);
+                    g += price * q; t += q;
+                });
+                document.getElementById('summary-total-items').textContent = t;
+                document.getElementById('summary-grand-total').textContent = 'PGK ' + g.toFixed(2);
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>
