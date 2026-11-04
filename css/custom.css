@@ -2628,7 +2628,7 @@ table.table-styled.dataTable tbody tr:hover td {
 .quick-link-btn {
     position: fixed;
     bottom: 30px;
-    left: 30px;                      /* opposite side from .scroll-btn */
+    left: 80px;                      /* opposite side from .scroll-btn */
     z-index: 99;
     width: 45px;
     height: 45px;

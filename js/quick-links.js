@@ -16,7 +16,7 @@
 
         const btn = document.createElement('a');
         btn.id = 'adminQuickLink';
-        btn.href = root + 'admin/login/index.html';
+        btn.href = root + 'admin/index.html';
         btn.className = 'quick-link-btn quick-link-admin';
         btn.title = 'Open Admin Panel (demo)';
         btn.setAttribute('aria-label', 'Open Admin Panel');
