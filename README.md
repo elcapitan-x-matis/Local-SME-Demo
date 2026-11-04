@@ -12,7 +12,6 @@
 
 🔗 **Original PHP + MySQL Repository:** [Klik-Maket (beta)](https://github.com/elcapitan-x-matis/Klik-Maket/tree/beta)
 
----
 
 ## 📋 Table of Contents
 
@@ -25,7 +24,6 @@
 - [Disclaimer](#-disclaimer)
 - [Folder Structure](#-folder-structure)
 
----
 
 ## 🎯 What This Demo Shows
 
@@ -53,7 +51,6 @@ Every page of the original platform is reproduced 1:1 as a static HTML page, inc
 - **Categories** — DataTable of 4 categories, View shows linked products
 - **Account & Change Password** — admin profile forms
 
----
 
 ## 🔄 What's Different from the Original
 
@@ -70,7 +67,6 @@ Every page of the original platform is reproduced 1:1 as a static HTML page, inc
 
 Everything that *can* work client-side — cart badge counters, wishlist toggles, quantity steppers, category filters, modals, DataTables sorting/search, scroll-to-top, offcanvas navigation — **does work** exactly as it did on the original PHP platform.
 
----
 
 ## 🌐 Live Demo
 
@@ -78,7 +74,6 @@ Everything that *can* work client-side — cart badge counters, wishlist toggles
 
 > Add the live URL here after enabling GitHub Pages in your repository settings (Settings → Pages → Branch: `main` / `root`).
 
----
 
 ## 🧪 Demo Accounts & Interactions
 
@@ -97,7 +92,6 @@ Everything that *can* work client-side — cart badge counters, wishlist toggles
 
 > **Note:** Nothing you do in the demo is saved to a server. Cart and wishlist persist in your browser's `localStorage` across page loads, but clearing your browser data resets everything.
 
----
 
 ## 🎨 Design System Preserved
 
@@ -115,7 +109,6 @@ Typography (Quicksand), shadows, border radii (30px on cards, 40px on pill butto
 
 Full component reference is available in the original project's README.
 
----
 
 ## 📸 Screenshots
 
@@ -125,7 +118,6 @@ Full component reference is available in the original project's README.
 | **Shop Catalogue** | **Product Management** |
 | [Shop Landing Page](screenshots/customer-shop.png) | [Admin Products](screenshots/admin-products.png) |
 
----
 
 ## ⚠️ Disclaimer
 
@@ -133,7 +125,6 @@ This repository is a **read-only showcase** intended for portfolio purposes. It 
 
 If you're interested in the real implementation — including the custom PHP MVC framework, PDO prepared statements, session-based authentication, and MySQL schema — see the [Klik-Maket (beta)](https://github.com/elcapitan-x-matis/Klik-Maket/tree/beta).
 
----
 
 ## 👤 Author
 
