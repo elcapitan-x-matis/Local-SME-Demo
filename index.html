@@ -12,8 +12,76 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/quicksand@5.0.0/index.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="shortcut icon" type="icon/ico" href="icon/favicon.ico" />
+
+    <style>
+    /* Demo announcement banner — local SME static showcase */
+        .demo-banner {
+            background: linear-gradient(90deg, #edb400 0%, #d19f00 100%);
+            color: #191919;
+            padding: 12px 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.92rem;
+            letter-spacing: 0.3px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 1031;
+        }
+        .demo-banner i {
+            margin-right: 6px;
+            font-size: 1.05rem;
+            vertical-align: middle;
+        }
+        .demo-banner a {
+            color: #191919;
+            text-decoration: underline;
+            font-weight: 700;
+            margin-left: 6px;
+        }
+        .demo-banner a:hover {
+            color: #3fa33d;
+        }
+        .demo-banner .banner-close {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: #191919;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+        }
+        .demo-banner .banner-close:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 576px) {
+            .demo-banner {
+                font-size: 0.8rem;
+                padding: 10px 40px 10px 14px;
+            }
+            .demo-banner .banner-close {
+                right: 10px;
+            }
+        }
+    </style>
+
 </head>
 <body data-root="">
+
+    <!-- 1. demo banner -->
+    <div class="demo-banner" id="demoBanner">
+        <i class="bi bi-info-circle-fill"></i>
+        Static demo of the <strong>Local SME</strong> platform.
+        All data is simulated — no orders are placed.
+        <a href="https://github.com/elcapitan-x-matis/Klik-Maket/tree/beta" target="_blank" rel="noopener">
+            View original PHP project →
+        </a>
+        <button class="banner-close" onclick="document.getElementById('demoBanner').style.display='none';" aria-label="Dismiss banner">&times;</button>
+    </div>
 
     <!-- CUSTOMER NAVBAR -->
     <nav class="navbar sticky-top navbar-dark site-nav">
@@ -278,6 +346,7 @@
     <script src="js/top-scroll.js"></script>
     <script src="js/demo-cart.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/quick-links.js"></script>
 
     <!-- Global System Alert Modal -->
     <div class="modal fade" id="systemAlertModal" tabindex="-1" aria-hidden="true">
@@ -337,6 +406,20 @@
           wrap.innerHTML = '<div class="col-12 text-center text-danger">Unable to load products.</div>';
         });
     });
+    </script>
+
+    <script>
+      (function () {
+          const banner = document.getElementById('demoBanner');
+          if (!banner) return;
+          if (sessionStorage.getItem('demoBannerDismissed') === '1') {
+              banner.style.display = 'none';
+          }
+          banner.querySelector('.banner-close').addEventListener('click', function () {
+              banner.style.display = 'none';
+              sessionStorage.setItem('demoBannerDismissed', '1');
+          });
+      })();
     </script>
 
 </body>

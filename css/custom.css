@@ -2618,3 +2618,93 @@ table.table-styled.dataTable tbody tr:hover td {
     align-items: center !important;
     width: 100%;
 }
+
+/* =============================================================
+   FLOATING QUICK LINKS (demo shortcut buttons)
+   Admin shortcut on customer pages, Storefront shortcut on admin.
+   Mirrors the .scroll-btn aesthetic.
+   ============================================================= */
+
+.quick-link-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;                      /* opposite side from .scroll-btn */
+    z-index: 99;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.quick-link-btn i {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.quick-link-btn:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+/* Admin shortcut (on customer pages) — dark with gold icon */
+.quick-link-admin {
+    background-color: #191919;
+    color: #edb400;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(237, 180, 0, 0.4);
+}
+.quick-link-admin:hover {
+    background-color: #edb400;
+    color: #191919;
+}
+
+/* Storefront shortcut (on admin pages) — green with white icon */
+.quick-link-store {
+    background-color: #3fa33d;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(63, 163, 61, 0.4);
+}
+.quick-link-store:hover {
+    background-color: #2f7d2d;
+    color: #ffffff;
+}
+
+/* Tooltip on hover (uses ::after pseudo, no JS) */
+.quick-link-btn::after {
+    content: attr(title);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #191919;
+    color: #edb400;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+.quick-link-btn:hover::after {
+    opacity: 1;
+}
+
+/* Mobile tweak — keep clear of the scroll-to-top button */
+@media (max-width: 767.98px) {
+    .quick-link-btn {
+        bottom: 20px;
+        left: 20px;
+        width: 42px;
+        height: 42px;
+    }
+    .quick-link-btn i { font-size: 1.15rem; }
+}
