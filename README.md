@@ -70,9 +70,7 @@ Everything that *can* work client-side — cart badge counters, wishlist toggles
 
 ## 🌐 Live Demo
 
-**GitHub Pages:** `https://<your-username>.github.io/<repo-name>/`
-
-> Add the live URL here after enabling GitHub Pages in your repository settings (Settings → Pages → Branch: `main` / `root`).
+**GitHub Pages:** `https://elcapitan-x-matis.github.io/Local-SME-Demo/`
 
 
 ## 🧪 Demo Accounts & Interactions
